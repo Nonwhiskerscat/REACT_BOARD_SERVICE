@@ -1,0 +1,135 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    print-color-adjust: exact;
+}
+
+body {
+    background-color: #f4f4f4;
+}
+
+table,
+th,
+tr,
+td {
+    padding: 0;
+    margin: 0;
+    border-collapse: collapse;
+    border-spacing: 0px;
+}
+
+table {
+    width: 100%;
+    border: 0;
+    position: relative;
+    table-layout: fixed;
+    // box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.15);
+
+    h4 {
+        font-size: 1em;
+        font-weight: bold;
+    }
+
+    thead,
+    tr,
+    td,
+    th {
+        border: 0;
+        padding: 0.5em 0;
+        position: relative;
+    }
+
+    th {
+        font-weight: 400;
+    }
+
+    td {
+        text-align: center;
+    }
+
+    tbody {
+        tr {
+            background-color: #fff;
+            border-width: 90%;
+
+            &:last-child {
+                border-bottom: 0;
+            }
+
+            &:hover {
+                transition: background-color 0.2s;
+            }
+        }
+    }
+
+    thead {
+        tr,
+        th,
+        td {
+            color: white;
+            // background: url(../../img/report/list_bg.png);
+            // color: $cms_gray;
+            background-position: center;
+            background-size: contain;
+        }
+    }
+}
+
+input {
+    &[type='text'],
+    &[type='number'],
+    &[type='datetime-local'],
+    &[type='input'],
+    &[type='password'],
+    &[type='date'] {
+        background-color: transparent;
+        outline: none;
+        padding: 0.15em 1em;
+        border-radius: 0.2em;
+        font-size: 1em;
+    }
+}
+
+button {
+    border: 0;
+    background-color: transparent;
+    cursor: pointer;
+    outline: none;
+}
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: normal;
+    width: fit-content;
+}
+
+ul,
+ol,
+li {
+    list-style-type: none;
+}
+
+p {
+    width: fit-content;
+    font-size: 16px;
+    word-break: break-all;
+    text-align: justify;
+}
+
+a {
+    // display: block;
+    text-decoration: none;
+}
+
+.bighead {
+    position: relative;
+    margin: 0 1em;
+}
+
+textarea {
+    resize: none;
+}

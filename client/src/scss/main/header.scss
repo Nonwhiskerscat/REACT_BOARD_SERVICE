@@ -1,0 +1,33 @@
+header {
+    .header_flex {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        margin-top: 10px;
+
+        & > div {
+            width: calc(100%/3);
+
+            &.left {
+                button {
+                    background-color: #005f2f;
+                }
+            }
+
+            &.center {
+                & > h1 {
+                    width: fit-content;
+                    margin: 0 auto;
+                }
+            }
+
+            &.right {
+                & > div {
+                    display: flex;
+                    width: fit-content;
+                    margin-left: auto;
+                }
+            }
+        }
+    }
+}

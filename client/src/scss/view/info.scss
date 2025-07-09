@@ -1,0 +1,110 @@
+.info_area {
+    margin-top: 1em;
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+    padding-bottom: 1.5em;
+    height: 60vh;
+    height: 0;
+    flex-grow: 1;
+
+    .title_section {
+        height: fit-content;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        padding: 0.5em 0;
+        border-top: #aaa 1px solid ;
+        border-bottom: #aaa 1px solid ;
+
+        .upper {
+            p.title {
+                font-size: 1.2em;
+            }
+        }
+
+        .lower {
+            margin-top: 0.5em;
+            display: flex;
+            justify-content: space-between;
+
+            .left, .right {
+                display: flex;
+                align-items: center;
+            }
+        }
+
+        .info_element {
+            display: flex;
+            align-items: center;
+            margin-left: 0.5em;
+
+            &:first-of-type {
+                margin-left: 0;
+            }
+
+            h4, p {
+                color: #888;
+            }
+
+            span.border {
+                padding: 0 0.25em;
+            }
+        }
+        
+
+    }
+
+    .body_section {
+        margin-top: 1em;
+        height: 0;
+        flex-grow: 1;
+        overflow: overlay;
+        word-break: break-all;
+
+        p {
+            text-align: justify;
+        }
+    }
+
+    .like_section {
+        .like_btn {
+            display: flex;
+            align-items: center;
+            width: fit-content;
+            margin: 0 auto;
+            & > button {
+                border: 2px solid #dadada;
+                background-color: transparent;
+                padding: 0.5em;
+                font-size: 1.5em;
+                border-radius: 5em;
+                transition: background-color 0.2s linear, border-color 0.2s linear;
+                margin-right: 0.5em;
+                &:hover {
+                    color: #fff;
+                    border-color: #44b900;
+                    background-color: #44b900;
+                }
+
+                &.dislike {
+                    &:hover {
+                        color: #fff;
+                        border-color: #ff6565;
+                        background-color: #ff6565;
+                    }
+                }
+            }
+
+            & > p {
+                font-size: 1.5em;
+                color: #555;
+            }
+
+            & > span.border {
+                padding: 1em;
+            }
+            
+        }
+    }
+}
